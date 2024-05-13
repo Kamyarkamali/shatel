@@ -1,15 +1,49 @@
+import { useContext } from "react";
+import { Context } from "../../context/ContextProvider";
+import { AnimatePresence, motion } from "framer-motion";
+
 // logo-image
 import image from "../../assets/images/logo.jpg";
+
+//data-title
 import { topMenuTitle } from "../../localdata/data";
+
+//component hamburger menu
+import HamburgerMenu from "../module/HamburgerMenu";
 
 //icons
 import { FiMenu } from "react-icons/fi";
 
 function TopMenu() {
+  const { hamburgrMenu, setHamburgerMenu } = useContext(Context);
+
   return (
     <div className="bg-[#FFFF] p-2 max-w-[1590px] mx-auto flex items-center justify-between fixed left-0 right-0 top-0 shadow-sm shadow-gray-300">
       <div className="flex items-center w-[400px] mr-5">
-        <FiMenu size={25} className="lg:hidden cursor-pointer" />
+        {/* hamburger menu */}
+        <div className="relative">
+          <FiMenu
+            onClick={() => setHamburgerMenu(!hamburgrMenu)}
+            size={25}
+            className="lg:hidden cursor-pointer"
+          />
+          <AnimatePresence>
+            {hamburgrMenu && (
+              <motion.div
+                initial={{ y: -100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: -100, opacity: 0 }}
+                transition={{ ease: "easeOut" }}
+                className={`absolute top-0  right-0 left-0 lg:hidden transition-all ${
+                  hamburgrMenu && "overlay"
+                }`}
+              >
+                <HamburgerMenu />
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
+
         <img
           className="w-[110px] rounded-full cursor-pointer"
           src={image}

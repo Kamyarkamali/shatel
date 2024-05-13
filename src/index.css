@@ -14,3 +14,21 @@ body {
   font-family: iranyekan;
   background-color: #f3f2f2;
 }
+
+.overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.bgHamburgerMenu {
+  background: rgb(53, 94, 189);
+  background: linear-gradient(
+    348deg,
+    rgba(53, 94, 189, 1) 0%,
+    rgba(155, 210, 230, 1) 100%
+  );
+}
