@@ -1,7 +1,11 @@
-import React from "react";
+import ServicesForm from "../../module/ServicesForm";
 
 function HomePage() {
-  return <div>HomePage</div>;
+  return (
+    <div>
+      <ServicesForm />
+    </div>
+  );
 }
 
 export default HomePage;

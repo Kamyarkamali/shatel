@@ -18,8 +18,8 @@ function TopMenu() {
   const { hamburgrMenu, setHamburgerMenu } = useContext(Context);
 
   return (
-    <div className="bg-[#FFFF] p-2 max-w-[1590px] mx-auto flex items-center justify-between fixed left-0 right-0 top-0 shadow-sm shadow-gray-300">
-      <div className="flex items-center w-[400px] mr-5">
+    <div className="bg-[#FFFF] z-[10000] p-2 max-w-[1590px] mx-auto flex items-center justify-between fixed left-0 right-0 top-0 shadow-sm shadow-gray-300">
+      <div className="flex items-center w-[400px] mr-11">
         {/* hamburger menu */}
         <div className="relative">
           <FiMenu
