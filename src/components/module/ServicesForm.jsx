@@ -3,7 +3,7 @@ import Form from "./Form";
 
 function ServicesForm() {
   return (
-    <div className="mt-[6.5rem] max-w-[1300px] mx-auto">
+    <div className="mt-[6.5rem] max-w-[1300px] mx-auto bgpic">
       <div className="flex justify-center lg:justify-start">
         <div className="relative mr-5 lg:mr-0">
           <h1 className="font-bold">دریافت سرویس</h1>

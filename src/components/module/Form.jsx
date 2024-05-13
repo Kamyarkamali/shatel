@@ -41,7 +41,7 @@ function Form() {
   };
 
   return (
-    <div className="flex lg:justify-between justify-center items-center relative">
+    <div className="flex  lg:justify-between justify-center items-center relative">
       <form
         onSubmit={handleSubmit(onFormSubmit)}
         className="bg-[#FFFF] xl:w-[500px] lg:w-[430px] md:w-[440px] sm:w-[340px] w-[320px] flex flex-col gap-7 justify-start p-3 h-fit rounded-lg shadow-md shadow-gray-300 mr-5 lg:ml-0"

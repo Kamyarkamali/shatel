@@ -32,3 +32,10 @@ body {
     rgba(155, 210, 230, 1) 100%
   );
 }
+
+.bgpic {
+  background-image: url("/src/assets/images/navar.png");
+  background-color: #f3f2f2;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
