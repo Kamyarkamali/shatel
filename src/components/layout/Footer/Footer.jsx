@@ -6,7 +6,6 @@ function Footer() {
   const sliceFoooter1 = footerMenu.slice(0, 4);
   const sliceFoooter2 = footerMenu.slice(4, 7);
 
-  console.log(sliceFoooter1);
   return (
     <div className="bg-[#FFFF] h-[200px] border-t-[1px] border-gray-200 p-4 max-w-[1600px] mx-auto flex justify-between">
       <div className="mr-8">
