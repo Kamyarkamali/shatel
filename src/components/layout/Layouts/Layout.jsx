@@ -9,7 +9,7 @@ function Layout({ children }) {
         <Header />
       </header>
 
-      <main className="min-h-[1000px]">{children}</main>
+      <main className="min-h-[700px]">{children}</main>
 
       <footer>
         <Footer />
